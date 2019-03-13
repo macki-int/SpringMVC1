@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"><html>
+<head>Cars table</head>
+<body>
+<table>
+    <tbody>
+    <tr th:each="car : ${cars}">
+        <td><span th:text="${car.id}"> Id </span></td>
+        <td><span th:text="${car.mark}"> Mark </span></td>
+        <td><span th:text="${car.power}"> Power </span></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
